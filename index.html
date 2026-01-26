@@ -4,14 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amaan's Land</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Space Mono", "monospace"],
+            },
+            colors: {
+              zen: {
+                bg: "#0c0a09" /* stone-950 */,
+                text: "#a8a29e" /* stone-400 */,
+                hover: "#e7e5e4" /* stone-200 */,
+              },
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <h1>stuff i've made</h1>
-    <a href="https://vcscreener.org/">agentic venture capital associate</a>
-    <br />
-    <a href="https://demo.guidely.live/">ai tutor</a>
-    <br />
-    <a href="rent-visualized.html">rent on a graph</a>
-    <br />
+
+  <body
+    class="bg-zen-bg text-zen-text max-w-2xl mx-auto px-8 pt-24 antialiased selection:bg-stone-700 selection:text-white"
+  >
+    <header class="mb-16">
+      <p class="font-mono text-sm font-light text-zen-text opacity-80">
+        hello, im Amaan.
+      </p>
+    </header>
+
+    <main>
+      <h2
+        class="font-mono text-xs font-light tracking-[0.2em] opacity-50 mb-6 uppercase"
+      >
+        stuff i've made
+      </h2>
+
+      <nav class="flex flex-col space-y-3 text-lg font-light tracking-wide">
+        <a href="https://vcscreener.org/" class="hover:text-zen-hover w-fit">
+          agentic venture capital associate
+        </a>
+
+        <a href="https://demo.guidely.live/" class="hover:text-zen-hover w-fit">
+          ai tutor
+        </a>
+
+        <a href="rent-visualized.html" class="hover:text-zen-hover w-fit">
+          rent on a graph (careful, it doesn't have dark mode)
+        </a>
+      </nav>
+    </main>
   </body>
 </html>
