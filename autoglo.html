@@ -79,7 +79,7 @@
         position: fixed;
         top: 0;
         width: 100%;
-        height: 70px;
+        height: 90px;
         background-color: var(--bg-dark);
         z-index: 1000;
         display: flex;
@@ -125,6 +125,35 @@
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 2px;
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 6px;
+      }
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+      }
+      .logo-text .brand {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .logo-text .slogan {
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: none;
       }
 
       .nav-overlay {
@@ -198,7 +227,7 @@
 
       /* --- VIEW CONTAINER (SPA Setup) --- */
       main {
-        margin-top: 70px;
+        margin-top: 90px;
       }
       .view {
         display: none;
@@ -235,6 +264,13 @@
         color: #fff;
         font-size: 2.5rem;
         text-align: center;
+      }
+      .hero .hero-slogan {
+        color: #fff;
+        font-size: 1rem;
+        margin-top: 10px;
+        text-transform: none;
+        font-weight: 600;
       }
 
       .section-pad {
@@ -457,7 +493,12 @@
       <div class="hamburger" id="hamburger-btn">
         <span></span><span></span><span></span>
       </div>
-      <div class="logo">AUTOGLO</div>
+      <div class="header-inner">
+        <img src="./logo-150.jpg" alt="AutoGlo logo" class="logo-img" />
+        <div class="logo-text">
+          <div class="brand">AUTOGLO</div>
+        </div>
+      </div>
     </header>
 
     <nav class="nav-overlay" id="mobile-nav">
@@ -509,7 +550,10 @@
     <main>
       <div id="view-home" class="view active">
         <section class="hero">
-          <h1>YOUR RIDE, OUR REPUTATION.</h1>
+          <div class="hero-content text-center">
+            <h1>YOUR RIDE, OUR REPUTATION.</h1>
+            <p class="hero-slogan">Detail driven, showroom glow</p>
+          </div>
         </section>
 
         <section class="section-pad">
